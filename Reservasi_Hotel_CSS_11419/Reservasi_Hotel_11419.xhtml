@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Reservation Hotel Room</title>
+  <link rel="stylesheet" type="text/css" href="Reservaasi_Hotel_11419.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>🛎️ Reservation Hotel Room 🛎️</h1>
+    <p class="subtitle">Silakan mengisi formulir dibawah ini !</p>
+
+    <form action="" method="post">
+      <fieldset>
+        <legend>Personal Data</legend>
+
+        <label>1. Name</label>
+        <input type="text" name="name" /><br />
+
+        <label>2. Gender</label>
+        <input type="text" name="gender" /><br />
+
+        <label>3. Email Address</label>
+        <input type="email" name="email" /><br />
+
+        <label>4. Telp Number</label>
+        <input type="text" name="telp" /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Reservation Room Form</legend>
+
+        <label>1. Reservation Name</label>
+        <input type="text" name="reservation_name" /><br />
+
+        <label>2. Booking Date</label>
+        <input type="date" name="booking_date" /><br />
+
+        <label>3. Room Type</label>
+        <select name="room_type">
+          <option value="deluxe">Deluxe</option>
+          <option value="standard">Standard</option>
+          <option value="suite">Suite</option>
+        </select><br />
+
+        <label>4. Bed Type</label>
+        <select name="bed_type">
+          <option value="single">Single Bed</option>
+          <option value="double">Double Bed</option>
+        </select><br />
+
+        <label>5. Breakfast</label><br />
+        <div class="radio-group">
+          <label><input type="radio" name="breakfast" value="with" /> With Breakfast</label>
+          <label><input type="radio" name="breakfast" value="without" /> Without Breakfast</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Payment</legend>
+
+        <label>1. Check in date</label>
+        <input type="date" name="checkin" /><br />
+
+        <label>2. Check out date</label>
+        <input type="date" name="checkout" /><br />
+
+        <label>3. Payment Method</label>
+        <select name="payment">
+          <option value="cash">Cash</option>
+          <option value="credit">Credit Card</option>
+          <option value="debit">Debit Card</option>
+        </select><br />
+      </fieldset>
+
+      <input type="submit" value="Submit Reservation" class="submit-btn" />
+    </form>
+  </div>
+</body>
+</html>
